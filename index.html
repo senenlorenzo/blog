@@ -196,6 +196,7 @@
                 <!-- Statistics -->
                 <article class="w3-grid w3-center w3-dark-grey w3-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
                     <h3 style="display: none">Estadisticas</h3>
+
                     <div class="w3-section">
                         <span class="w3-xlarge">14+</span><br />
                         Partners
@@ -226,7 +227,7 @@
                     </header>
 
                     <!-- Portfolio -->
-                    <section class="w3-content w3-container w3-padding-64" id="portfolio">
+                    <div class="w3-content w3-container w3-padding-64" id="portfolio">
                         <h3 class="w3-center">MIS TRABAJOS</h3>
 
                         <p class="w3-center">
@@ -257,7 +258,7 @@
                         <p class="w3-center">
                             <button class="w3-button w3-padding-large w3-light-grey">LOAD MORE</button>
                         </p>
-                    </section>
+                    </div>
 
                     <!-- Image Modal -->
                     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
@@ -333,50 +334,49 @@
                 To the top
             </a>
 
-            <div class="w3-xlarge w3-section">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
-            </div>
+            <ul class="w3-xlarge w3-section" style="list-style: none">
+                <li style="display: inline"><i class="fa fa-facebook-official w3-hover-opacity"></i></li>
+                <li style="display: inline"><i class="fa fa-instagram w3-hover-opacity"></i></li>
+                <li style="display: inline"><i class="fa fa-snapchat w3-hover-opacity"></i></li>
+                <li style="display: inline"><i class="fa fa-pinterest-p w3-hover-opacity"></i></li>
+                <li style="display: inline"><i class="fa fa-twitter w3-hover-opacity"></i></li>
+                <li style="display: inline"><i class="fa fa-linkedin w3-hover-opacity"></i></li>
+            </ul>
 
             <p>
                 Powered by
                 <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
             </p>
+            <script>
+                // Modal Image Gallery
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                    document.getElementById("caption").innerHTML = element.alt;
+                }
+
+                // Change navigation style when scrolling
+                window.onscroll = function () {
+                    var navbar = document.getElementById("myNavbar");
+
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        navbar.className = "w3-flex w3-card w3-animate-top w3-white";
+                    } else {
+                        navbar.className = "w3-flex";
+                    }
+                };
+
+                // Toggle navigation on small screens
+                function toggleFunction() {
+                    var x = document.getElementById("navDemo");
+
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
         </footer>
-
-        <script>
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                document.getElementById("caption").innerHTML = element.alt;
-            }
-
-            // Change navigation style when scrolling
-            window.onscroll = function () {
-                var navbar = document.getElementById("myNavbar");
-
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    navbar.className = "w3-flex w3-card w3-animate-top w3-white";
-                } else {
-                    navbar.className = "w3-flex";
-                }
-            };
-
-            // Toggle navigation on small screens
-            function toggleFunction() {
-                var x = document.getElementById("navDemo");
-
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
     </body>
 </html>
