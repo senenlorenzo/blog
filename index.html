@@ -82,15 +82,27 @@
             </div>
         </header>
         <!-- Navigation -->
-        <div class="w3-top">
-            <nav class="w3-flex" id="myNavbar">
-                <a href="#home" class="w3-button">INICIO</a>
+        <nav class="w3-top">
+            <h2 style="display: none"></h2>
+            <ul class="w3-flex" id="myNavbar" style="list-style: none">
+                <li>
+                    <a href="#home" class="w3-button">
+                        <i class="fa fa-home"></i>
+                        INICIO</a
+                    >
+                </li>
 
-                <a href="#about" class="w3-button w3-hide-small"> <i class="fa fa-user"></i> SOBRE MÍ </a>
+                <li>
+                    <a href="#about" class="w3-button w3-hide-small"> <i class="fa fa-user"></i> SOBRE MÍ </a>
+                </li>
 
-                <a href="#portfolio" class="w3-button w3-hide-small"> <i class="fa fa-th"></i> PORTFOLIO </a>
+                <li>
+                    <a href="#portfolio" class="w3-button w3-hide-small"> <i class="fa fa-th"></i> PORTFOLIO </a>
+                </li>
 
-                <a href="#contact" class="w3-button w3-hide-small"> <i class="fa fa-envelope"></i> CONTACTO </a>
+                <li>
+                    <a href="#contact" class="w3-button w3-hide-small"> <i class="fa fa-envelope"></i> CONTACTO </a>
+                </li>
 
                 <a href="#" class="w3-button w3-hide-small w3-hover-red" style="margin-left: auto">
                     <i class="fa fa-search"></i>
@@ -99,7 +111,7 @@
                 <button class="w3-button w3-hide-medium w3-hide-large" style="margin-left: auto" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </button>
-            </nav>
+            </ul>
 
             <!-- Navigation on small screens -->
             <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
@@ -111,182 +123,183 @@
 
                 <a href="#" class="w3-bar-item w3-button">SEARCH</a>
             </div>
-        </div>
-
-        <!-- About -->
-        <section class="w3-content w3-container w3-padding-64" id="about">
-            <h2 class="w3-center">SOBRE MÍ</h2>
-            <article>
-                <h3 class="w3-center">
-                    <em>Mi progreso en desarrollo web</em>
-                </h3>
-
-                <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </article>
-            <article class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px">
-                <div class="w3-center w3-padding-large">
-                    <h3>
-                        <b>
-                            <i class="fa fa-user w3-margin-right"></i>
-                            Soy Senén Neira
-                        </b>
+        </nav>
+        <main>
+            <!-- About -->
+            <section class="w3-content w3-container w3-padding-64" id="about">
+                <h2 class="w3-center">SOBRE MÍ</h2>
+                <article>
+                    <h3 class="w3-center">
+                        <em>Mi progreso en desarrollo web</em>
                     </h3>
 
-                    <img src="assets/img/avatar.webp" class="w3-round w3-opacity w3-hover-opacity-off" alt="Foto de perfil" style="width: 100%; max-width: 500px" />
-                </div>
+                    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </article>
+                <article class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px">
+                    <div class="w3-center w3-padding-large">
+                        <h3>
+                            <b>
+                                <i class="fa fa-user w3-margin-right"></i>
+                                Soy Senén Neira
+                            </b>
+                        </h3>
 
-                <div class="w3-padding-large">
-                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
-            </article>
-            <article>
-                <h4 class="w3-large w3-center w3-padding-16">Soy bueno en:</h4>
-
-                <p class="w3-wide"><i class="fa fa-gamepad"></i> Videojuegos</p>
-
-                <div class="w3-light-grey">
-                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 90%">90%</div>
-                </div>
-
-                <p class="w3-wide"><i class="fa fa-laptop"></i> Diseño web</p>
-
-                <div class="w3-light-grey">
-                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 100%">Progreso adecuadamente</div>
-                </div>
-
-                <p class="w3-wide"><i class="fa fa-television"></i> Diseño de videojuegos</p>
-
-                <div class="w3-light-grey">
-                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 100%">En progreso</div>
-                </div>
-            </article>
-        </section>
-
-        <!-- Statistics -->
-        <div class="w3-grid w3-center w3-dark-grey w3-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
-            <div class="w3-section">
-                <span class="w3-xlarge">14+</span><br />
-                Partners
-            </div>
-
-            <div class="w3-section">
-                <span class="w3-xlarge">55+</span><br />
-                Projects Done
-            </div>
-
-            <div class="w3-section">
-                <span class="w3-xlarge">89+</span><br />
-                Happy Clients
-            </div>
-
-            <div class="w3-section">
-                <span class="w3-xlarge">150+</span><br />
-                Meetings
-            </div>
-        </div>
-
-        <!-- Second Parallax Image -->
-        <div class="bgimg-2 w3-display-container w3-opacity-min">
-            <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide"> PORTFOLIO </span>
-            </div>
-        </div>
-
-        <!-- Portfolio -->
-        <section class="w3-content w3-container w3-padding-64" id="portfolio">
-            <h3 class="w3-center">MIS TRABAJOS</h3>
-
-            <p class="w3-center">
-                <em>
-                    Here are some of my latest work.<br />
-                    Click on the images to make them bigger.
-                </em>
-            </p>
-
-            <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
-                <img src="https://www.w3schools.com/w3images/p1.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" />
-
-                <img src="https://www.w3schools.com/w3images/p2.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans" />
-
-                <img src="https://www.w3schools.com/w3images/p3.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup" />
-
-                <img src="https://www.w3schools.com/w3images/p4.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean" />
-
-                <img src="https://www.w3schools.com/w3images/p5.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist" />
-
-                <img src="https://www.w3schools.com/w3images/p6.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter" />
-
-                <img src="https://www.w3schools.com/w3images/p7.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train" />
-
-                <img src="https://www.w3schools.com/w3images/p8.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing" />
-            </div>
-
-            <p class="w3-center">
-                <button class="w3-button w3-padding-large w3-light-grey">LOAD MORE</button>
-            </p>
-        </section>
-
-        <!-- Image Modal -->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
-            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"> × </span>
-
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image" alt="Selected portfolio image" />
-
-                <p id="caption" class="w3-opacity w3-large"></p>
-            </div>
-        </div>
-
-        <!-- Third Parallax Image -->
-        <div class="bgimg-3 w3-display-container w3-opacity-min">
-            <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide"> CONTACTO </span>
-            </div>
-        </div>
-
-        <!-- Contact -->
-        <section class="w3-content w3-container w3-padding-64" id="contact">
-            <h2 class="w3-center">WHERE I WORK</h2>
-
-            <p class="w3-center">
-                <em>I'd love your feedback!</em>
-            </p>
-
-            <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px">
-                <div>
-                    <img src="assets/img/mapa_lugo.webp" class="w3-round" style="width: 100%" alt="Mapa de Avenida Adolfo Suarez en Lugo" />
-                </div>
-
-                <div>
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
-                        Lugo, ES<br />
-
-                        <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
-                        Phone: +00 151515<br />
-
-                        <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
-                        Email: senen.neira@protonmail.com
+                        <img src="assets/img/avatar.webp" class="w3-round w3-opacity w3-hover-opacity-off" alt="Foto de perfil" style="width: 100%; max-width: 500px" />
                     </div>
 
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                    <div class="w3-padding-large">
+                        <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </article>
+                <article>
+                    <h4 class="w3-large w3-center w3-padding-16">Soy bueno en:</h4>
 
-                    <form action="/action_page.php" target="_blank">
-                        <div class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+                    <p class="w3-wide"><i class="fa fa-gamepad"></i> Videojuegos</p>
 
-                            <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" />
-                        </div>
+                    <div class="w3-light-grey">
+                        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 90%">90%</div>
+                    </div>
 
-                        <p>
-                            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
-                        </p>
+                    <p class="w3-wide"><i class="fa fa-laptop"></i> Diseño web</p>
 
-                        <button class="w3-button w3-black w3-right" type="submit">SEND MESSAGE</button>
-                    </form>
+                    <div class="w3-light-grey">
+                        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 100%">Progreso adecuadamente</div>
+                    </div>
+
+                    <p class="w3-wide"><i class="fa fa-television"></i> Diseño de videojuegos</p>
+
+                    <div class="w3-light-grey">
+                        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 100%">En progreso</div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Statistics -->
+            <div class="w3-grid w3-center w3-dark-grey w3-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
+                <div class="w3-section">
+                    <span class="w3-xlarge">14+</span><br />
+                    Partners
+                </div>
+
+                <div class="w3-section">
+                    <span class="w3-xlarge">55+</span><br />
+                    Projects Done
+                </div>
+
+                <div class="w3-section">
+                    <span class="w3-xlarge">89+</span><br />
+                    Happy Clients
+                </div>
+
+                <div class="w3-section">
+                    <span class="w3-xlarge">150+</span><br />
+                    Meetings
                 </div>
             </div>
-        </section>
+
+            <!-- Second Parallax Image -->
+            <div class="bgimg-2 w3-display-container w3-opacity-min">
+                <div class="w3-display-middle">
+                    <span class="w3-xxlarge w3-text-white w3-wide"> PORTFOLIO </span>
+                </div>
+            </div>
+
+            <!-- Portfolio -->
+            <section class="w3-content w3-container w3-padding-64" id="portfolio">
+                <h3 class="w3-center">MIS TRABAJOS</h3>
+
+                <p class="w3-center">
+                    <em>
+                        Here are some of my latest work.<br />
+                        Click on the images to make them bigger.
+                    </em>
+                </p>
+
+                <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
+                    <img src="https://www.w3schools.com/w3images/p1.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" />
+
+                    <img src="https://www.w3schools.com/w3images/p2.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans" />
+
+                    <img src="https://www.w3schools.com/w3images/p3.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup" />
+
+                    <img src="https://www.w3schools.com/w3images/p4.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean" />
+
+                    <img src="https://www.w3schools.com/w3images/p5.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist" />
+
+                    <img src="https://www.w3schools.com/w3images/p6.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter" />
+
+                    <img src="https://www.w3schools.com/w3images/p7.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train" />
+
+                    <img src="https://www.w3schools.com/w3images/p8.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing" />
+                </div>
+
+                <p class="w3-center">
+                    <button class="w3-button w3-padding-large w3-light-grey">LOAD MORE</button>
+                </p>
+            </section>
+
+            <!-- Image Modal -->
+            <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
+                <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"> × </span>
+
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image" alt="Selected portfolio image" />
+
+                    <p id="caption" class="w3-opacity w3-large"></p>
+                </div>
+            </div>
+
+            <!-- Third Parallax Image -->
+            <div class="bgimg-3 w3-display-container w3-opacity-min">
+                <div class="w3-display-middle">
+                    <span class="w3-xxlarge w3-text-white w3-wide"> CONTACTO </span>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <section class="w3-content w3-container w3-padding-64" id="contact">
+                <h2 class="w3-center">WHERE I WORK</h2>
+
+                <p class="w3-center">
+                    <em>I'd love your feedback!</em>
+                </p>
+
+                <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px">
+                    <div>
+                        <img src="assets/img/mapa_lugo.webp" class="w3-round" style="width: 100%" alt="Mapa de Avenida Adolfo Suarez en Lugo" />
+                    </div>
+
+                    <div>
+                        <div class="w3-large w3-margin-bottom">
+                            <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
+                            Lugo, ES<br />
+
+                            <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
+                            Phone: +00 151515<br />
+
+                            <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
+                            Email: senen.neira@protonmail.com
+                        </div>
+
+                        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+
+                        <form action="/action_page.php" target="_blank">
+                            <div class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+
+                                <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" />
+                            </div>
+
+                            <p>
+                                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
+                            </p>
+
+                            <button class="w3-button w3-black w3-right" type="submit">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
