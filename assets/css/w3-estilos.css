@@ -7,6 +7,10 @@ h5,
 h6 {
     font-family: "Lato", sans-serif;
 }
+
+h1 {
+    white-space: nowrap;
+}
 body,
 html {
     height: 100%;
@@ -51,6 +55,13 @@ ul {
 
 .w3-hover-opacity {
     cursor: pointer;
+}
+.align-right {
+    margin-left: auto;
+}
+
+.mayusculas {
+    text-transform: uppercase;
 }
 
 .pechado {
