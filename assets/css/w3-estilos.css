@@ -1,3 +1,9 @@
+:root {
+    --color-primario: #aa3c39;
+    --color-secundario: #802b66;
+    --color-terciario: #fbd149;
+    --color-texto: #222;
+}
 body,
 h1,
 h2,
@@ -16,6 +22,25 @@ html {
     height: 100%;
     color: #777;
     line-height: 1.8;
+}
+html,
+p,
+li,
+span {
+    color: var(--color-texto);
+}
+h1,
+h2,
+h3 {
+    color: var(--color-primario);
+}
+h4,
+h5,
+h6 {
+    color: var(--color-secundario);
+}
+a {
+    color: var(--color-terciario);
 }
 
 ul {
