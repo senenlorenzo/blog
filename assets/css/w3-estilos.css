@@ -23,6 +23,10 @@ ul {
     margin: 0%;
     padding: 0%;
 }
+.iconos li {
+    list-style: none;
+    display: inline-block;
+}
 
 /* Parallax images */
 .bgimg-1,
