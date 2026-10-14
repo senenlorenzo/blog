@@ -3,15 +3,27 @@
     --color-secundario: #802b66;
     --color-terciario: #fbd149;
     --color-texto: #222;
+
+    --font-family-titles: "Mystery Quest", system-ui;
+    --fontfamily-textos: "Outfit", sans-serif;
 }
-body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato", sans-serif;
+    font-family: var(--font-family-titles);
+}
+html,
+article,
+p,
+li,
+span,
+figcaption,
+caption,
+legend {
+    font-family: var(--fontfamily-textos);
 }
 
 h1 {
