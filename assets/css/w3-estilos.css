@@ -67,6 +67,7 @@ li {
     display: inline-block;
 }
 .sn-bgimg {
+    background-color: #802b66;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
