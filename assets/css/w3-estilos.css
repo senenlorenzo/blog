@@ -6,6 +6,9 @@
 
     --font-family-titles: "Mystery Quest", system-ui;
     --fontfamily-textos: "Outfit", sans-serif;
+    --bg-portada-1: url("../img/photo_web.webp");
+    --bg-parallax-2: url("../img/photo_html.webp");
+    --bg-parallax-3: url("../img/programming.webp");
 }
 h1,
 h2,
@@ -80,16 +83,16 @@ li {
 }
 
 .sn-portada {
-    background-image: url("../img/photo_web.webp");
+    background-image: var(--bg-portada-1);
     min-height: 100vh;
 }
 
 .sn-parallax-2 {
-    background-image: url("../img/photo_html.webp");
+    background-image: var(--bg-parallax-2);
 }
 
 .sn-parallax-3 {
-    background-image: url("../img/programming.webp");
+    background-image: var(--bg-parallax-3);
 }
 
 .w3-wide {
