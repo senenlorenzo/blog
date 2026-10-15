@@ -9,6 +9,14 @@
     --bg-portada-1: url("../img/photo_web.webp");
     --bg-parallax-2: url("../img/photo_html.webp");
     --bg-parallax-3: url("../img/programming.webp");
+    --bg-tarea-1: url("https://www.w3schools.com/w3images/p1.jpg");
+    --bg-tarea-2: url("https://www.w3schools.com/w3images/p2.jpg");
+    --bg-tarea-3: url("https://www.w3schools.com/w3images/p3.jpg");
+    --bg-tarea-4: url("https://www.w3schools.com/w3images/p4.jpg");
+    --bg-tarea-5: url("https://www.w3schools.com/w3images/p5.jpg");
+    --bg-tarea-6: url("https://www.w3schools.com/w3images/p6.jpg");
+    --bg-tarea-7: url("https://www.w3schools.com/w3images/p7.jpg");
+    --bg-tarea-8: url("https://www.w3schools.com/w3images/p8.jpg");
 }
 h1,
 h2,
@@ -93,6 +101,36 @@ li {
 
 .sn-parallax-3 {
     background-image: var(--bg-parallax-3);
+}
+.sn-bg-tarea {
+    width: 100%;
+    aspect-ratio: 4/3;
+    /* height: 100%; */
+    margin: 0;
+}
+.sn-bg-tarea-1 {
+    background-image: var(--bg-tarea-1);
+}
+.sn-bg-tarea-2 {
+    background-image: var(--bg-tarea-2);
+}
+.sn-bg-tarea-3 {
+    background-image: var(--bg-tarea-3);
+}
+.sn-bg-tarea-4 {
+    background-image: var(--bg-tarea-4);
+}
+.sn-bg-tarea-5 {
+    background-image: var(--bg-tarea-5);
+}
+.sn-bg-tarea-6 {
+    background-image: var(--bg-tarea-6);
+}
+.sn-bg-tarea-7 {
+    background-image: var(--bg-tarea-7);
+}
+.sn-bg-tarea-8 {
+    background-image: var(--bg-tarea-8);
 }
 
 .w3-wide {
