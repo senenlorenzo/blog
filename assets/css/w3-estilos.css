@@ -66,30 +66,29 @@ li {
     list-style: none;
     display: inline-block;
 }
-
-/* Parallax images */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
-    background-attachment: fixed;
+.sn-bgimg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bgimg-1 {
+/* Parallax images */
+.sn-fixed {
+    background-attachment: fixed;
+    min-height: 50vh;
+}
+
+.sn-portada {
     background-image: url("../img/photo_web.webp");
-    min-height: 100%;
+    min-height: 100vh;
 }
 
-.bgimg-2 {
+.sn-parallax-2 {
     background-image: url("../img/photo_html.webp");
-    min-height: 400px;
 }
 
-.bgimg-3 {
+.sn-parallax-3 {
     background-image: url("../img/programming.webp");
-    min-height: 400px;
 }
 
 .w3-wide {
